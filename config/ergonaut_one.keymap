@@ -31,27 +31,27 @@
 
         default_layer {
             bindings = <
-&mt LALT RBKT         &kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y        &kp U          &kp I      &kp O    &kp P     &ht LWIN LEFT_BRACKET
-&mt LCTRL GRAVE       &kp A  &kp S  &kp D      &kp F      &kp G      &kp H        &kp J          &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LSHIFT BACKSLASH  &kp Z  &kp X  &kp C      &kp V      &kp B      &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT MINUS
+&ht LALT RBKT         &kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y        &kp U          &kp I      &kp O    &kp P     &ht LWIN LEFT_BRACKET
+&mt LCTRL GRAVE       &kp A  &kp S  &kp D      &kp F      &kp G      &kp H        &kp J          &kp K      &kp L    &kp SEMI  &ht RCTRL SQT
+&mt LSHIFT BACKSLASH  &kp Z  &kp X  &kp C      &kp V      &kp B      &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &ht RSHIFT MINUS
                                     &lt 2 TAB  &kp SPACE  &lt 1 ESC  &lt 1 ENTER  &kp BACKSPACE  &lt 2 DEL
             >;
         };
 
         lower_layer {
             bindings = <
-&kp LEFT_ALT    &kp LA(LSHIFT)  &kp N7  &kp N8  &kp N9  &kp N0     &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LA(LEFT_SHIFT)  &kp LEFT_GUI
-&kp LCTRL       &kp LSHIFT      &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &trans              &kt RCTRL
-&kp LEFT_SHIFT  &kp LC(B)       &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &trans              &kp RIGHT_SHIFT
+&kp LEFT_ALT    &kp LA(LSHIFT)  &kp N7  &kp N8  &kp N9  &kp N0     &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LA(LEFT_SHIFT)  &mt RWIN CAPS
+&kp LCTRL       &kp LSHIFT      &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+&kp LEFT_SHIFT  &kp LC(B)       &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp PAUSE_BREAK  &kp RSHIFTT
                                         &trans  &trans  &trans     &trans        &trans    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&mt RALT KP_NUM  &kp LA(LSHIFT)  &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LBKT  &mt RWIN CAPS
-&mt LCTRL EQUAL  &kp GRAVE       &kp F4  &kp F5  &kp F6  &kp F11  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH  &mt RCTRL K_APP
-&kp LSHIFT       &kp LC(B)       &kp F1  &kp F2  &kp F3  &kp F12  &kp C_VOL_DN  &kp END   &kp SQT    &kp PG_DN  &kp RBKT  &kp RSHIFT
+&mt RALT KP_NUM  &kp LA(LSHIFT)  &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LA(LEFT_SHIFT)        &mt RWIN CAPS
+&mt LCTRL EQUAL  &kp GRAVE       &kp F4  &kp F5  &kp F6  &kp F11  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+&kp LSHIFT       &kp LC(B)       &kp F1  &kp F2  &kp F3  &kp F12  &kp C_VOL_DN  &kp END   &kp SQT    &kp PG_DN  &kp PAUSE_BREAK  &kp RSHIFT
                                          &trans  &trans  &trans   &trans        &trans    &trans
             >;
         };

@@ -13,6 +13,16 @@
 
 / {
     behaviors {
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -20,7 +30,7 @@
 
         default_layer {
             bindings = <
-&mt LALT RBKT         &kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y        &kp U          &kp I      &kp O    &kp P     &mt LWIN LBKT
+&mt LALT RBKT         &kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y        &kp U          &kp I      &kp O    &kp P     &ht LWIN LEFT_BRACKET
 &mt LCTRL GRAVE       &kp A  &kp S  &kp D      &kp F      &kp G      &kp H        &kp J          &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
 &mt LSHIFT BACKSLASH  &kp Z  &kp X  &kp C      &kp V      &kp B      &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT MINUS
                                     &lt 2 TAB  &kp SPACE  &lt 1 ESC  &lt 1 ENTER  &kp BACKSPACE  &lt 2 DEL

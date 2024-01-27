@@ -39,28 +39,28 @@
 
         raise_layer {
             bindings = <
-&none  &kp ESC    &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &none
-&none  &kp BSPC   &kp F4  &kp F5  &kp F6  &kp F11  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp INS          &none
-&none  &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F12  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp PAUSE_BREAK  &none
+&none  &kp ESC    &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LBKT  &none
+&none  &kp BSPC   &kp F4  &kp F5  &kp F6  &kp F11  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH  &none
+&none  &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F12  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp RBKT  &none
                           &trans  &trans  &trans   &trans        &trans    &trans
             >;
         };
 
-        layer_4 {
+        lower_layer {
             bindings = <
-&trans  &kp LA(LSHIFT)  &kp N7  &kp N8  &kp N9  &kp N0    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &none
-&trans  &kp LSHIFT      &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp INS          &none
-&trans  &kp LC(B)       &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp PAUSE_BREAK  &none
-                                &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &kp LA(LSHIFT)  &kp N7  &kp N8  &kp N9  &kp N0     &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LBKT  &none
+&trans  &kp LSHIFT      &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH  &none
+&trans  &kp LC(B)       &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp RBKT  &none
+                                &trans  &trans  &trans     &trans        &trans    &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&none &bootloader  &none         &none         &none         &none            &none &none         &none         &none         &none         &bootloader
-&none &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &none &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&none &sys_reset   &none         &none         &none         &none            &none          &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &trans        &none         &trans
+&none  &bootloader  &none         &none         &none         &none         &none   &none         &none         &none         &none         &bootloader
+&none  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none   &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&none  &sys_reset   &none         &none         &none         &none         &none   &none         &none         &none         &none         &sys_reset
+                                  &trans        &none         &trans        &trans  &none         &trans
             >;
         };
     };

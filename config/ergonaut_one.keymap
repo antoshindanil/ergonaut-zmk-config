@@ -20,7 +20,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <220>;
             flavor = "tap-preferred";
         };
     };
@@ -33,15 +33,15 @@
 &ht LALT RBKT         &kp Q  &kp W  &kp E      &kp R        &kp T      &kp Y        &kp U            &kp I      &kp O    &kp P     &ht LWIN LEFT_BRACKET
 &mt LCTRL GRAVE       &kp A  &kp S  &kp D      &kp F        &kp G      &kp H        &kp J            &kp K      &kp L    &kp SEMI  &ht RCTRL SQT
 &mt LSHIFT BACKSLASH  &kp Z  &kp X  &kp C      &kp V        &kp B      &kp N        &kp M            &kp COMMA  &kp DOT  &kp FSLH  &ht RSHIFT MINUS
-                                    &lt 3 TAB  &lt 2 SPACE  &lt 1 ESC  &lt 1 ENTER  &lt 2 BACKSPACE  &lt 3 DEL
+                                    &lt 2 TAB  &lt 3 SPACE  &lt 1 ESC  &lt 1 ENTER  &lt 3 BACKSPACE  &lt 2 DEL
             >;
         };
 
         lower_layer {
             bindings = <
-&kp LEFT_ALT    &kp LA(LSHIFT)  &kp N7  &kp N8  &kp N9  &kp N0     &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LA(LEFT_SHIFT)  &mt RWIN CAPS
+&kp LEFT_ALT    &kp LA(LSHIFT)  &kp N1  &kp N2  &kp N3  &kp N0     &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp LA(LEFT_SHIFT)  &mt RWIN CAPS
 &kp LCTRL       &kp LSHIFT      &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LEFT      &kp DOWN  &kp UP     &kp RIGHT  &kp INS             &mt RCTRL K_APP
-&kp LEFT_SHIFT  &kp LC(B)       &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp PAUSE_BREAK     &kp RSHFT
+&kp LEFT_SHIFT  &kp LC(B)       &kp N7  &kp N8  &kp N9  &kp EQUAL  &kp C_VOL_DN  &kp END   &trans     &kp PG_DN  &kp PAUSE_BREAK     &kp RSHFT
                                         &trans  &trans  &trans     &trans        &trans    &trans
             >;
         };
@@ -60,7 +60,7 @@
 &kp LC(B)         &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp LA(LSHFT)
 &mt LSHIFT EQUAL  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RSHIFT MINUS
 &mt LCTRL F12     &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &mt RCTRL F11
-                           &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans    &trans    &trans     &trans     &trans    &trans
             >;
         };
 
